@@ -1,0 +1,221 @@
+<!doctype>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Le Bon Coin de Chez Nous</title>
+	</head>
+	<body>
+		<header>
+			<div class="contener">
+				<img src="cool37.png" width="'50" height="50"><img src="cool36.jpg" width="'50" height="50">
+			<ul class="dflex">
+				<li><a href="index.html">ACCUEIL</a> </li>
+				<li><a href="A_propos.html">A PROPOS</a> </li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li class="centro"><a href="commande.html"> PASSER UNE COMMANDE</a></li>
+			</ul>	
+			</div>
+		</header>
+		<p class="forme"><img src="a8.jpg" width="100" height="100"><br/>
+				<strong>LE BON COIN DE CHEZ NOUS</strong> <br/>
+			Le restaurant le plus étoilé de la ville de brazzaville<br/><br/>
+		</p>
+		<p class="forme">Ecrivez nous sur </p><br><br>
+			<p class="forme"> <a href="https//:www.facebook.fr"><img src="facebook.png" width="50" height="50"></a>
+				<a href="https//:www.instagram.fr"><img src="instagram.png" width="50" height="50"></a>
+			    <a href="https//:www.whatsapp.fr"><img src="whatsapp.png" width="50" height="50"></a>
+			</p>
+		 <section class="just">
+				 <article class="juste">
+				 		<p>
+							<img src="40e.png" width="500" height="300" >
+						</p> 	
+				</article>
+				<article class="juste">
+				 		<section class="c1A">
+			       <article class="c1aa" >
+				<br><br><h2> Nous Contacter</h2>
+				<form id="orderForm" method="POST" action="">
+				    <input type="text" id="nom" name="nom" placeholder="NOM" required>
+				    <input type="text" id="phone" name="phone" placeholder="TELEPHONE" required>
+				    <input type="text" id="adresse" name="adresse" placeholder="ADRESSE" required>
+				   <textarea name="message" placeholder="Votre message" required></textarea><br>
+				    </select>
+				    <!-- Bouton de soumission du formulaire -->
+				    <button type="submit">Envoyer</button>
+                </form>
+				</article>
+			</section>
+	     </section>
+		</article>
+	</section>
+</body>
+			
+
+<style type="text/css">
+	body{
+	background-color: #fff8e1;
+	}
+
+/* RESET DE BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CONTENEUR ENTÊTE */
+.contener {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.dflex {
+  display: flex;
+  list-style: none;
+}
+
+.dflex li {
+  margin: 0 10px;
+}
+
+.dflex a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.dflex a:hover {
+  background-color: orange;
+  border-radius: 4px;
+  color: white;
+}
+
+.centro {
+  background-color: orange;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 12px;
+}
+
+/* TITRE ET DESCRIPTION */
+.forme {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.forme strong {
+  font-size: 28px;
+  color: orangered;
+  font-family: cursive;
+}
+
+/* BOUTONS RÉSEAUX SOCIAUX */
+.forme img {
+  margin: 10px;
+}
+
+/* SECTION À DEUX COLONNES */
+.just {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.juste {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 500px;
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+/* FORMULAIRE */
+.c1A input,
+.c1A textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.c1A textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.c1A button {
+  width: 100%;
+  background-color: orangered;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.c1A button:hover {
+  background-color: darkorange;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .contener {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dflex {
+    flex-direction: column;
+  }
+
+  .dflex li {
+    margin: 8px 0;
+  }
+
+  .just {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .juste img {
+    width: 100%;
+    height: auto;
+  }
+
+  .c1A {
+    width: 100%;
+  }
+
+  .c1aa {
+    width: 100%;
+  }
+}
+</style>
+
+
+
+			
+				
+			
+	</body>
+</html>

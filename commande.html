@@ -1,0 +1,601 @@
+<!doctype>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Le Bon Coin de Chez Nous</title>
+	</head>
+	<body class="bformulaire">
+		<header>
+			<div class="contener">
+				<img src="cool37.png" width="'50" height="50"><img src="cool36.jpg" width="'50" height="50">
+			<ul class="dflex">
+				<li><a href="index.html">ACCUEIL</a> </li>
+				<li><a href="A_propos.html">A PROPOS</a> </li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li class="centro"><a href="commande.html"> PASSER UNE COMMANDE</a></li>
+			</ul>	
+			</div>
+		</header>
+		<section class="c1A">
+			<article class="c1aa" >
+				<br><br><h2> Faite vos commandes en vous inscrivant </h2>
+				<form id="orderForm" method="POST" action="get_plats.php">
+				    <input type="text" id="nom" name="nom" placeholder="NOM" required>
+				    <input type="text" id="phone" name="phone" placeholder="TELEPHONE" required>
+				    <input type="text" id="address" name="address" placeholder="ADRESSE" required>
+				    <label for="menu">Menu :</label>
+				    <select name="ID_Menu" id="menu" required>
+				        <option value="">Sélectionnez un Menu</option>
+				        <option value="1">menu dejeuner</option>
+				        <option value="2">menu diner</option>
+				        <option value="3">menu enfant</option> 
+				    </select>
+
+				    <!-- Bouton de soumission du formulaire -->
+				    <button type="submit">Envoyer</button>
+                </form>
+		<script>
+					  document.getElementById("orderForm").addEventListener("submit", function(event) {
+			    // Vérification du téléphone (doit être un numéro valide)
+			    var phone = document.getElementById("phone").value;
+			    var phoneRegex = /^(06|05|04)\d{7}$/; // Assumes phone is 10 digits
+			    if (!phoneRegex.test(phone)) {
+			        alert("Veuillez entrer un numéro de téléphone valide.");
+			        event.preventDefault();
+			    }
+
+			    // Vérification que le menu et la quantité sont bien sélectionnés
+			    var menu = document.getElementById("menu").value;
+			});
+		</script>			
+		            </article>
+	 </section>
+	</body>
+	</html>
+<style type="text/css">
+	body{
+		background-color: black;
+	}
+.contener{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	background-color:black;
+	padding-left: 40px;
+}
+.contener a:hover{
+	border: 5px solid orange;
+	border-radius: 2px;
+	background-color: orange;
+	color: white;
+	text-align: center;
+}
+.dflex{
+	display: inline-flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	color: orangered;
+	padding-right: 30px;
+}
+.dflex a{
+     color: white;
+}
+header ul{
+	list-style: none;
+}
+header li{
+	margin-left: 30px;
+	padding-right: 30px;
+}
+.contener0{
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.contener0 p{
+	font-size: 30px;
+	font-family: arial;
+    color: white;
+}
+.contener0 strong{
+	font-size: 60px;
+	font-family: time new roman;
+	color: orange;
+}
+.contener0 em{
+	color: orange;
+}
+.forme{
+	text-align: center;
+	color: white;
+}
+.centre{
+	border: 3px solid coral;
+	background-color: orangered;
+	color: white;
+}
+
+.centro{
+	border: 5px solid orange;
+	background-color: orange;
+	color: white;
+	text-align: center;
+}
+h1{
+	color: orangered;
+	text-align: center;
+}
+h2{
+	font-family: time new roman;
+	color: orangered;
+	text-align: center;
+}
+h5{
+	font-size: 40px;
+	color: brown;
+	text-align: center;
+	padding-right: 400px;
+	padding-left: 400px;
+}
+.contener1{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	padding-right: 150px;
+	padding-left: 150px;
+	margin-top: 20px;
+	margin-bottom: 3px;
+	background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #28a745;
+}
+.contener1 a{
+	color: orangered;
+	text-decoration: none;
+}
+.contener1 a:hover{
+	border: 5px solid orange;
+	background-color: orange;
+	color: white;
+	text-align: center;
+}
+.contenera{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	padding-right: 150px;
+	padding-left: 150px;
+	background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #28a745;
+}
+.contenera a{
+	color: orangered;
+}
+.contenera a:hover{
+	border: 5px solid orange;
+	background-color: orange;
+	color: white;
+	text-align: center;
+}
+
+.contener2{
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+.contener2 a{
+	color: orangered;
+	text-decoration: none;
+}
+.contener2 a:hover{
+	border: 5px solid orange;
+	background-color: orange;
+	color: orangered;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.contener3{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+}
+.bas{
+	padding-top:30px;
+	padding-right: 200px;
+	text-align: center;
+}
+
+.bas2{
+	padding-top:30px;
+	padding-left:50px;
+	text-align: center;
+}
+.contener4{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	margin-top: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+.contener5{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	padding-right: 150px;
+	padding-left: 150px;
+}
+.contener5{
+      color: black;
+      font-size: 30px;
+      color: oldlace;
+}
+.contener6{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	padding-left: 250px;
+	padding-right: 250px;
+}
+.contener7{
+	display: flex;
+	align-content: space-between;
+	text-align: center;
+	padding-left: 320px;
+}
+.contener7 strong{
+	color: brown;
+	font-size: 20px;
+}
+.A{
+	align-content: center;
+	padding-left: 55f0px;
+	color: white;
+	font-size: 30px;
+	
+}
+.cours{
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+.c1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: beige;
+	padding-top: 20px;
+
+}
+
+.c1 label{
+	color: blue;
+}
+.c1 input{
+	background-color: orange;
+	color: black;
+}
+.c1 fieldset{
+	color: coral;
+	width: 650px;
+	height: 600px;
+
+   }
+.c1 strong{
+	text-align: center;
+}
+.c1 a{
+	text-decoration:none ;
+}
+.c1A{
+	width: 300px;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 435px;
+}
+.c1A label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+.c1A label:hover{
+	color: orangered;
+	box-shadow:5px 5px 10px lawngreen;
+}
+
+.c1A input, select, textarea {
+
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 400px;
+    height: 35px;
+}
+.c1A input:hover {
+	background-color:lightgreen;
+}
+
+.c1A button {
+    width:100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.c1A button:hover {
+    background-color: #218838;
+}
+.c1aa{
+	width:500px ;
+	height: 450px ;
+	background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #218838;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.c2{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 200px;
+	padding-left: 200px;
+	
+}
+.c2 p {
+	text-align: center;
+}
+.c2 a{
+	color: white;
+}
+.c2 ul{
+	list-style: none;	
+}
+.c2 strong{
+	color: brown;
+}
+.c2 em{
+	border-radius: 2px solid brown;
+	background-color: brown;
+	color: white;
+}
+.forme{
+	font-size: 20px;
+	text-align: center;
+	color: black;
+}
+.forme strong{
+	font-size: 40px;
+	color: brown;
+}
+
+.B{ 
+	background-image: url(a12.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+.B strong{
+	font-size: 30px;
+	font-family: cursive;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+.juste{
+	text-align: center;
+	font-weight: bold;
+	text-align: justify;
+	background-color: blanchedalmond;
+	font-family: comic sans MS;
+	color: darkblue;
+}
+#bmenu{
+	background-image: url(cool1.jpg);
+	padding-left: 75px;
+	padding-right: 75px;
+}
+.couleur{
+	background-color: beige;
+}
+.couleur a{
+	text-decoration: none;
+}
+.bapropos{
+	background-color: white;
+}
+.bcommande{
+	background-image: url(cool1.jpg);
+}
+.bformulaire{
+	background-color: #fff8e1;
+}
+.footerA{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.messa{
+	font-size: 20px;
+	color: darkgray;
+	text-align: center;
+}
+.messi{
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding-top: 50px;
+}
+.messi p{
+	font-size: 30px;
+	color: black;
+	text-align: center;
+}
+.messi strong{
+	font-size: 30px;
+	text-align: center;
+}
+.footerA p{
+	color: yellow;
+	text-align: center;
+	text-align: justify;
+}
+.footerA strong{
+	color: white;
+	text-align: center;
+	text-align: justify;
+}
+footer{
+	background-image: url(cool1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: yellow;
+	text-align: center;
+}
+.conteneurPA{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 150;
+	padding-right: 150px;
+	background-color: blanchedalmond;
+}
+.conteneurPA p{
+	text-align:center;
+	font-family: comic sans MS;
+	color: darkgray;
+}
+.conteneurPA strong{
+	color: darkblue;
+}
+/* === MEDIA QUERY POUR TABLETTES (<= 1024px) === */
+@media (max-width: 1024px) {
+  .contener,
+  .contener1,
+  .contenera,
+  .contener2,
+  .contener3,
+  .contener4,
+  .contener5,
+  .contener6,
+  .contener7,
+  .footerA,
+  .conteneurPA {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .dflex {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header li {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .c1A {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .c1aa {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .c1A input,
+  .c1A select,
+  .c1A textarea {
+    width: 100%;
+  }
+}
+
+/* === MEDIA QUERY POUR MOBILES (<= 768px) === */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .contener img {
+    width: 40px;
+    height: auto;
+  }
+
+  .dflex a {
+    display: block;
+    padding: 10px;
+  }
+
+  .footerA,
+  .conteneurPA {
+    padding: 10px;
+  }
+
+  .footerA img {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1, h2, h5 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .forme strong {
+    font-size: 30px;
+  }
+
+  .c1aa {
+    height: auto;
+  }
+}
+
+
+
+		</style>
+
+	 </body>
+	 </html>
